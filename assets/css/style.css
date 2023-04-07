@@ -651,7 +651,7 @@ section {
 --------------------------------------------------------------*/
 #about{
   background-color: #003399;
-  padding-top:100px;
+  padding-top:150px;
 }
 
 .about .content {
@@ -767,11 +767,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# Products section
 --------------------------------------------------------------*/
 
 .portfolio {
-  padding-top: 100px;
+  padding-top: 150px;
 }
 .portfolio .portfolio-item {
   margin-bottom: 30px;
