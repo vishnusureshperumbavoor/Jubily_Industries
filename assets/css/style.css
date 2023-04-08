@@ -76,7 +76,7 @@ h6 {
 }
 
 .top-container img{
-  length:20px;
+  height:20px;
   width:20px;
 }
 
@@ -390,7 +390,7 @@ h6 {
 }
 
 #hero .carousel-item::before {
-  content: "";
+  /* content: ""; */
   background-color: rgba(30, 35, 40, 0.6);
 }
 
