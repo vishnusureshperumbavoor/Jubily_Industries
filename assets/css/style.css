@@ -142,8 +142,15 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 70px;
+  max-height: 100px;
 }
+
+@media (max-width: 767px) {
+  #header .logo img {
+    max-height: 50px; /* Adjust the desired height for mobile devices */
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -390,7 +397,7 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 130vh;
+  height: 120vh;
   background-color: rgba(63, 73, 83, 0.8);
   overflow: hidden;
   position: relative;
@@ -535,7 +542,13 @@ h6 {
 @media (max-width: 992px) {
   #hero {
     height: 100vh;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    height: calc(100vw * 0.75); /* Adjust the percentage value as per your preference */
   }
+}
 
   #hero .carousel-container {
     top: 8px;
@@ -545,6 +558,9 @@ h6 {
 
 
 @media (max-width: 768px) {
+  #hero {
+    height:25vh;
+  }
   #hero h2 {
     font-size: 28px;
   }
@@ -836,6 +852,7 @@ section {
   margin-right: 0;
 }
 
+
 .portfolio .portfolio-wrap {
   transition: 0.3s;
   position: relative;
@@ -913,12 +930,48 @@ section {
   opacity: 1;
 }
 
+.portfolio .portfolio-wrap:hover .portfolio-lightbox{
+  display:block;
+}
+
 .portfolio .portfolio-wrap:hover img {
   transform: scale(1.2);
 }
 
 .portfolio .portfolio-wrap:hover .portfolio-info {
   opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Portfolio hover
+--------------------------------------------------------------*/
+
+.hover-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.3s;
+  z-index: 2;
+}
+
+.hover-link.show-link {
+  opacity: 1;
+}
+
+.hover-link::after {
+  content: "View Image";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  z-index: 1;
 }
 
 /*--------------------------------------------------------------
