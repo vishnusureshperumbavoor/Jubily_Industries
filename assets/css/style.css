@@ -544,13 +544,7 @@ h6 {
     height: 100vh;
 }
 
-@media (max-width: 768px) {
-  #hero {
-    height: calc(100vw * 0.75); /* Adjust the percentage value as per your preference */
-  }
-}
-
-  #hero .carousel-container {
+#hero .carousel-container {
     top: 8px;
   }
 }
