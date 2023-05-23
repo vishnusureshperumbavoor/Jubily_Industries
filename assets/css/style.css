@@ -84,6 +84,48 @@ h6 {
   text-decoration:none;color:black;font-size: medium;
 }
 
+/* downalod brochure button */
+.download-brochure-button {
+  background-color: #0d6efd;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.15385;
+  font-weight: bolder;
+  margin: 0;
+  outline: none;
+  padding: 18px .8em;
+  position: relative;
+  text-align: right;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.download-brochure-button:hover,
+.download-brochure-button:focus {
+  background-color: #07c;
+}
+
+.download-brochure-button:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.download-brochure-button:active {
+  background-color: #0064bd;
+  box-shadow: none;
+}
+
 /* Media query for mobile screens */
 /* Media query for mobile screens */
 @media (max-width: 767px) {
